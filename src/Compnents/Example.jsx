@@ -1,9 +1,10 @@
 import { TypeAnimation } from 'react-type-animation';
+import './Example.css'
 
 export const Example = () => {
   return (
     <>
-      <div className='h-[65vh] flex justify-around items-center border-y-2'>
+      <div className='h-[65vh] flex justify-around items-center'>
         <div className=' upper-left w-[50vw] font-bold text-xl text-purple-500'>
           <TypeAnimation
             sequence={[
@@ -22,7 +23,7 @@ export const Example = () => {
         </div>
 
         <div>
-          <img src='./src/assets/imagemy.png' alt='My Image' />
+          <img className='shadow' src='./src/assets/imagemy.png' alt='My Image' />
         </div>
       </div>
     </>

@@ -1,6 +1,4 @@
 import { Component, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { Navbar } from './Compnents/Navbar'
 import './App.css'
 // import { Uppercontent} from './Compnents/Uppercontent'
@@ -10,28 +8,28 @@ import Carousel from './Compnents/Carousel';
 function App() {
   const slides = [
     {
-      image: '/path_to_image_1.jpg',
-      title: 'Slide 1',
+      image: './src/assets/Frontendimg/Html.png',
+      title: 'HTML',
       description: 'Description for Slide 1',
     },
     {
-      image: '/path_to_image_2.jpg',
-      title: 'Slide 2',
+      image: './src/assets/Frontendimg/Css.png',
+      title: 'CSS5',
       description: 'Description for Slide 2',
     },
     {
-      image: '/path_to_image_3.jpg',
-      title: 'Slide 3',
+      image: './src/assets/Frontendimg/Js.png',
+      title: 'JAVASCRIPT',
       description: 'Description for Slide 3',
     },
     {
-      image: '/path_to_image_4.jpg',
-      title: 'Slide 4',
+      image: './src/assets/Frontendimg/react.png',
+      title: 'REACT',
       description: 'Description for Slide 4',
     },
     {
-      image: '/path_to_image_2.jpg',
-      title: 'Slide 2',
+      image: './src/assets/Frontendimg/Nextjs.png',
+      title: 'NEXT.JS',
       description: 'Description for Slide 2',
     },
     // Add more slides as needed
