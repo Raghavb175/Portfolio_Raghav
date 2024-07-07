@@ -14,7 +14,7 @@ const Carousel = ({ slides, cardsToShow }) => {
 
   return (
     <div className="carousel w-[75vw] flex justify-center mx-auto">
-      <div className="carousel-container " style={{ transform: `translateX(-${currentSlide * (100 / cardsToShow)}%)` }}>
+      <div className="carousel-container pt-6" style={{ transform: `translateX(-${currentSlide * (100 / cardsToShow)}%)` }}>
         {slides.map((slide, index) => (
           <div key={index} className="carousel-slide w-60">
             <img src={slide.image} alt={slide.title} className="carousel-image w-[50%] m-auto" />

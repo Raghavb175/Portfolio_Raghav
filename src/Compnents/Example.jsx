@@ -26,7 +26,7 @@ export const Example = () => {
           <img className='shadow' src='./src/assets/imagemy.png' alt='My Image' />
         </div>
       </div>
-        <div className='w-[95%] h-0.5 bg-purple-600 m-auto'></div>
+        <div className='opacity-55 w-[95%] h-0.5 bg-purple-600 m-auto'></div>
     </>
   );
 };
