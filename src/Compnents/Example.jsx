@@ -3,8 +3,8 @@ import { TypeAnimation } from 'react-type-animation';
 export const Example = () => {
   return (
     <>
-      <div className='h-[75vh] bg-black flex justify-around items-center'>
-        <div className='bg-black upper-left w-[50vw] font-bold text-xl text-purple-500'>
+      <div className='h-[65vh] flex justify-around items-center border-y-2'>
+        <div className=' upper-left w-[50vw] font-bold text-xl text-purple-500'>
           <TypeAnimation
             sequence={[
               'Hello I am\nRaghav',
