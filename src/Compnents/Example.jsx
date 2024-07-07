@@ -1,5 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
-import './Example.css'
+import './CSS files/Example.css'
 
 export const Example = () => {
   return (
@@ -26,6 +26,7 @@ export const Example = () => {
           <img className='shadow' src='./src/assets/imagemy.png' alt='My Image' />
         </div>
       </div>
+        <div className='w-[95%] h-0.5 bg-purple-600 m-auto'></div>
     </>
   );
 };

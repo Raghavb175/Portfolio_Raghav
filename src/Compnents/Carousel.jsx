@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Carousel.css'; // Import CSS for styling
+import './CSS files/Carousel.css'; // Import CSS for styling
 
 const Carousel = ({ slides, cardsToShow }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
