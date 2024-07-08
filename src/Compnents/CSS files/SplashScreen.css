@@ -1,0 +1,23 @@
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it covers other content */
+  }
+  
+  .logo {
+    width: 250px; /* Adjust size as needed */
+    animation: fadeInOut 6s ease-in-out; /* Adjust animation duration as needed */
+  }
+  
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  

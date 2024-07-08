@@ -5,8 +5,6 @@ export const Navbar = () => {
     <div className='flex w-[100vw] text-purple-600 justify-between'>
       <div className='logo ml-4 w-28 py-1 pl-px'><img src='./src/assets/Navimg/Logo.jpeg'></img></div>
         <ul className='flex gap-5 p-4 cursor-pointer left-[50%]'>
-         
-            <li>Home</li>
             <li>About</li>
             <li>Projects</li>
             <li>Certifications</li>

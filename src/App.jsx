@@ -4,6 +4,7 @@ import './App.css'
 // import { Uppercontent} from './Compnents/Uppercontent'
 import { Example } from './Compnents/Example'
 import Carousel from './Compnents/Carousel';
+import SplashScreen from './Compnents/SplashScreen';
 
 function App() {
   const slides = [
@@ -35,6 +36,7 @@ function App() {
 
   return (
     <>
+    <SplashScreen></SplashScreen>
     <Navbar></Navbar>
     <Example></Example>
     <Carousel slides={slides} cardsToShow={cardsToShow} />
