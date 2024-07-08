@@ -7,6 +7,7 @@ import Carousel from './Compnents/Carousel';
 import SplashScreen from './Compnents/SplashScreen';
 
 function App() {
+
   const slides = [
     {
       image: './src/assets/Frontendimg/Html.png',
