@@ -10,10 +10,13 @@
     align-items: center;
     z-index: 1000; /* Ensure it covers other content */
   }
-  
+  /* .splash-screen.hidden{
+    opacity: 0; 
+  pointer-events: none;
+  } */
   .logo {
     width: 250px; /* Adjust size as needed */
-    animation: fadeInOut 6s ease-in-out; /* Adjust animation duration as needed */
+    animation: fadeInOut 4s ease-in-out; /* Adjust animation duration as needed */
   }
   
   @keyframes fadeInOut {

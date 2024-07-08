@@ -51,7 +51,7 @@ const Carousel = ({ slides }) => {
           }}
         >
           {slides.map((slide, index) => (
-            <div key={index} className="carousel-slide" style={{ width: '120px' }}>
+            <div key={index} className="carousel-slide" style={{ width: '140px' }}>
               <img src={slide.image} alt={slide.title} className="carousel-image w-full m-auto" />
               <div className="carousel-content flex justify-center">
                 <h2>{slide.title}</h2>

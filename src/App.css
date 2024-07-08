@@ -4,17 +4,4 @@ body {
   font-family: 'Roboto', sans-serif;
   background: rgb(0, 0, 0);
   overflow-x: hidden;
- 
-}
-.main-content {
-  opacity: 0; /* Initially hide main content */
-}
-
-.fade-in {
-  animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
