@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './CSS files/Carousel.css'; // Import CSS for styling
 
-const Carousel = ({ slides }) => {
+const Carousel = ({ slides, headerImage }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [cardsToShow, setCardsToShow] = useState(1);
   const carouselRef = useRef(null);
@@ -41,7 +41,9 @@ const Carousel = ({ slides }) => {
 
   return (
     <div className='Carousel-main flex items-center justify-around'>
-      <div className='front-header text-purple-500 text-xl'><img className='w-[55%] ml-7' src="./src/assets/Frontendimg/frontend.png" alt=""></img></div>
+      <div className='front-header text-purple-500 text-xl'>
+        <img className='w-[55%] ml-7' src={headerImage} alt="Header" />
+      </div>
       <div ref={carouselRef} className="carousel mx-7 flex justify-start overflow-hidden">
         <div
           className="carousel-container pt-6 flex transition-transform duration-500"

@@ -78,7 +78,30 @@ function App() {
     },
     // Add more slides as needed
   ];
-
+  const Databaseslides = [
+    {
+      image: './src/assets/Dataimg/Oracle.png',
+      title: 'ORACLE',
+    },
+    {
+      image: './src/assets/Dataimg/MySQL.png',
+      title: 'MySQL',
+    },
+    {
+      image: './src/assets/Dataimg/MongoDB.png',
+      title: 'MongoDB',
+    },
+    {
+      image: './src/assets/Dataimg/Mongoose.png',
+      title: 'Mongoose',
+    },
+    {
+      image: './src/assets/Dataimg/SQL.png',
+      title: 'SQL',
+    },
+   
+    // Add more slides as needed
+  ];
 
 
 
@@ -91,9 +114,9 @@ function App() {
     <SplashScreen></SplashScreen>
     <Navbar></Navbar>
     <Example></Example>
-    <Carousel slides={slides} cardsToShow={cardsToShow} />
-    <Carousel slides={backendslides} cardsToShow={cardsToShow} />
-    <Carousel slides={slides} cardsToShow={cardsToShow} />
+    <Carousel slides={slides} cardsToShow={cardsToShow} headerImage="./src/assets/Frontendimg/frontend.png" />
+    <Carousel slides={backendslides} cardsToShow={cardsToShow}headerImage="./src/assets/Backendimg/Backendimg1.png" />
+    <Carousel slides={Databaseslides} cardsToShow={cardsToShow} headerImage="./src/assets/Dataimg/Databaseimg.png" />
     </>
   )
 }
