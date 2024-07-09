@@ -40,11 +40,11 @@ const Carousel = ({ slides, headerImage }) => {
   };
 
   return (
-    <div className='Carousel-main flex items-center justify-evenly'>
+    <div className='Carousel-main flex items-center justify-evenly '>
       <div className='front-header text-purple-500 text-xl'>
         <img className='w-[65%] ml-7' src={headerImage} alt="Header" />
       </div>
-      <div ref={carouselRef} className="carousel pt-6 mx-7 flex justify-start overflow-hidden">
+      <div ref={carouselRef} className="carousel -my-8 mx-7 flex justify-start overflow-hidden">
         <div
           className="carousel-container flex transition-transform duration-500"
           style={{
@@ -54,7 +54,7 @@ const Carousel = ({ slides, headerImage }) => {
         >
           {slides.map((slide, index) => (
             <div key={index} className="carousel-slide mx-5" style={{ width: '140px' }}>
-              <img src={slide.image} alt={slide.title} className="carousel-image w-full m-auto" />
+              <img src={slide.image} alt={slide.title} className="carousel-image w-full mx-auto" />
               <div className="carousel-content flex justify-center">
                 <h2>{slide.title}</h2>
               </div>

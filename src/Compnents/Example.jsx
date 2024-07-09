@@ -5,7 +5,7 @@ export const Example = () => {
   return (
     <>
       <div className='h-[50vh] flex justify-around items-center'>
-        <div className=' upper-left w-[50vw] font-bold text-xl text-purple-500'>
+        <div className=' upper-left w-[50vw] font-bold text-3xl text-purple-500'>
           <TypeAnimation
             sequence={[
               'Hello I am\nRaghav',
