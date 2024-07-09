@@ -102,6 +102,37 @@ function App() {
    
     // Add more slides as needed
   ];
+  const Techslides = [
+    {
+      image: './src/assets/Technologies img/Rest.png',
+      title: 'REST API',
+    },
+    {
+      image: './src/assets/Technologies img/Git.png',
+      title: 'Git',
+    },
+    {
+      image: './src/assets/Technologies img/Figma.png',
+      title: 'Figma',
+    },
+    {
+      image: './src/assets/Technologies img/Adobe.png',
+      title: 'Photoshop',
+    },
+    {
+      image: './src/assets/Technologies img/Excel.png',
+      title: 'Ms Excel',
+    },
+    {
+      image: './src/assets/Technologies img/Powerpoint.png',
+      title: 'Ms Powerpoint',
+    },
+    {
+      image: './src/assets/Technologies img/Word.png',
+      title: 'Ms Word',
+    },
+    // Add more slides as needed
+  ];
 
 
 
@@ -115,8 +146,9 @@ function App() {
     <Navbar></Navbar>
     <Example></Example>
     <Carousel slides={slides} cardsToShow={cardsToShow} headerImage="./src/assets/Frontendimg/frontend.png" />
-    <Carousel slides={backendslides} cardsToShow={cardsToShow}headerImage="./src/assets/Backendimg/Backendimg1.png" />
+    <Carousel slides={backendslides} cardsToShow={cardsToShow} headerImage="./src/assets/Backendimg/Backendimg1.png" />
     <Carousel slides={Databaseslides} cardsToShow={cardsToShow} headerImage="./src/assets/Dataimg/Databaseimg.png" />
+    <Carousel slides={Techslides} cardsToShow={cardsToShow} headerImage="./src/assets/Technologies img/Techimg.png" />
     </>
   )
 }

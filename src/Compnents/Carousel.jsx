@@ -10,7 +10,7 @@ const Carousel = ({ slides, headerImage }) => {
     const handleResize = () => {
       if (carouselRef.current) {
         const containerWidth = carouselRef.current.offsetWidth;
-        const cardWidth = 240; // Fixed width for each slide
+        const cardWidth = 160; // Fixed width for each slide
         setCardsToShow(Math.floor(containerWidth / cardWidth));
       }
     };
@@ -36,7 +36,7 @@ const Carousel = ({ slides, headerImage }) => {
   };
 
   const calculateTranslateX = () => {
-    return currentSlide * 120; // Translate by the width of one slide
+    return currentSlide * 200; // Translate by the width of one slide
   };
 
   return (
@@ -44,9 +44,9 @@ const Carousel = ({ slides, headerImage }) => {
       <div className='front-header text-purple-500 text-xl'>
         <img className='w-[55%] ml-7' src={headerImage} alt="Header" />
       </div>
-      <div ref={carouselRef} className="carousel mx-7 flex justify-start overflow-hidden">
+      <div ref={carouselRef} className="carousel pt-6 mx-7 flex justify-start overflow-hidden">
         <div
-          className="carousel-container pt-6 flex transition-transform duration-500"
+          className="carousel-container flex transition-transform duration-500"
           style={{
             transform: `translateX(-${calculateTranslateX()}px)`,
             width: `${slides.length * 140}px` // Set the width based on the number of slides and fixed slide width
