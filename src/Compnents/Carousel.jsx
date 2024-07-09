@@ -10,7 +10,7 @@ const Carousel = ({ slides }) => {
     const handleResize = () => {
       if (carouselRef.current) {
         const containerWidth = carouselRef.current.offsetWidth;
-        const cardWidth = 120; // Fixed width for each slide
+        const cardWidth = 240; // Fixed width for each slide
         setCardsToShow(Math.floor(containerWidth / cardWidth));
       }
     };
@@ -41,17 +41,17 @@ const Carousel = ({ slides }) => {
 
   return (
     <div className='Carousel-main flex items-center justify-around'>
-      <div className='front-header text-purple-500 text-xl'><p>FRONT-END</p></div>
-      <div ref={carouselRef} className="carousel mx-4 w-[80vw] flex justify-start overflow-hidden">
+      <div className='front-header text-purple-500 text-xl'><img className='w-[55%] ml-7' src="./src/assets/Frontendimg/frontend.png" alt=""></img></div>
+      <div ref={carouselRef} className="carousel mx-7 flex justify-start overflow-hidden">
         <div
           className="carousel-container pt-6 flex transition-transform duration-500"
           style={{
             transform: `translateX(-${calculateTranslateX()}px)`,
-            width: `${slides.length * 120}px` // Set the width based on the number of slides and fixed slide width
+            width: `${slides.length * 140}px` // Set the width based on the number of slides and fixed slide width
           }}
         >
           {slides.map((slide, index) => (
-            <div key={index} className="carousel-slide" style={{ width: '140px' }}>
+            <div key={index} className="carousel-slide mx-5" style={{ width: '140px' }}>
               <img src={slide.image} alt={slide.title} className="carousel-image w-full m-auto" />
               <div className="carousel-content flex justify-center">
                 <h2>{slide.title}</h2>

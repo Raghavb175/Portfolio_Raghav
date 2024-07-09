@@ -10,6 +10,30 @@ function App() {
 
   const slides = [
     {
+      image: './src/assets/Frontendimg/react.png',
+      title: 'REACT',
+    },
+    {
+      image: './src/assets/Frontendimg/Nextjs.png',
+      title: 'NEXT.JS',
+    },
+    {
+      image: './src/assets/Frontendimg/Js.png',
+      title: 'JAVASCRIPT',
+    },
+    {
+      image: './src/assets/Frontendimg/Wordpress.png',
+      title: 'Wordpress',
+    },
+    {
+      image: './src/assets/Frontendimg/EJS.png',
+      title: 'EJS',
+    },
+    {
+      image: './src/assets/Frontendimg/Boot.png',
+      title: 'Bootstrap',
+    },
+    {
       image: './src/assets/Frontendimg/Html.png',
       title: 'HTML',
     },
@@ -18,19 +42,46 @@ function App() {
       title: 'CSS5',
     },
     {
-      image: './src/assets/Frontendimg/Js.png',
-      title: 'JAVASCRIPT',
-    },
-    {
-      image: './src/assets/Frontendimg/react.png',
-      title: 'REACT',
-    },
-    {
-      image: './src/assets/Frontendimg/Nextjs.png',
-      title: 'NEXT.JS',
+      image: './src/assets/Frontendimg/Tailwind.png',
+      title: 'Tailwind.css',
     },
     // Add more slides as needed
   ];
+
+
+
+
+  const backendslides = [
+    {
+      image: './src/assets/Backendimg/Node.png',
+      title: 'Node.js',
+    },
+    {
+      image: './src/assets/Backendimg/Java.png',
+      title: 'Java',
+    },
+    {
+      image: './src/assets/Backendimg/Python.png',
+      title: 'Python',
+    },
+    {
+      image: './src/assets/Backendimg/EJS.png',
+      title: 'EJS',
+    },
+    {
+      image: './src/assets/Backendimg/Express.png',
+      title: 'Express',
+    },
+    {
+      image: './src/assets/Backendimg/Wordpress.png',
+      title: 'Wordpress',
+    },
+    // Add more slides as needed
+  ];
+
+
+
+
 
   const cardsToShow = 2; // Number of cards to show at a time
 
@@ -40,6 +91,8 @@ function App() {
     <SplashScreen></SplashScreen>
     <Navbar></Navbar>
     <Example></Example>
+    <Carousel slides={slides} cardsToShow={cardsToShow} />
+    <Carousel slides={backendslides} cardsToShow={cardsToShow} />
     <Carousel slides={slides} cardsToShow={cardsToShow} />
     </>
   )
