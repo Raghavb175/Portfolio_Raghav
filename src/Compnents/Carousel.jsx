@@ -40,9 +40,9 @@ const Carousel = ({ slides, headerImage }) => {
   };
 
   return (
-    <div className='Carousel-main flex items-center justify-around'>
+    <div className='Carousel-main flex items-center justify-evenly'>
       <div className='front-header text-purple-500 text-xl'>
-        <img className='w-[55%] ml-7' src={headerImage} alt="Header" />
+        <img className='w-[65%] ml-7' src={headerImage} alt="Header" />
       </div>
       <div ref={carouselRef} className="carousel pt-6 mx-7 flex justify-start overflow-hidden">
         <div

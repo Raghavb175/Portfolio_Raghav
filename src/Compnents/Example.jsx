@@ -4,7 +4,7 @@ import './CSS files/Example.css'
 export const Example = () => {
   return (
     <>
-      <div className='h-[65vh] flex justify-around items-center'>
+      <div className='h-[50vh] flex justify-around items-center'>
         <div className=' upper-left w-[50vw] font-bold text-xl text-purple-500'>
           <TypeAnimation
             sequence={[
@@ -21,12 +21,15 @@ export const Example = () => {
             repeat={Infinity}
           />
         </div>
-
         <div>
           <img className='shadow' src='./src/assets/imagemy.png' alt='My Image' />
         </div>
       </div>
-        <div className='opacity-55 w-[95%] h-0.5 bg-purple-600 m-auto'></div>
+        <div className='opacity-30 w-[95%] h-0.5 bg-purple-600 m-auto'></div>
+        <div className='About-me text-purple-500 w-[75vw] text-center m-auto py-4'><h1 className='font-bold text-lg'>About me</h1>
+        <p>I'm a recent SAIT graduate and aspiring Full-Stack Developer with a passion for creating dynamic and responsive web applications. Skilled in both frontend and backend technologies, I stay updated with modern web trends to deliver high-quality digital experiences. Dedicated to continuous learning, I strive to build efficient and user-friendly solutions.
+        </p></div>
+        <div className='opacity-30 w-[95%] h-0.5 bg-purple-600 m-auto'></div>
     </>
   );
 };
