@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Navbar = () => {
   return (
-    <div className='flex w-[100vw] text-purple-600 justify-between'>
+    <div className='flex w-[100vw] text-purple-600 justify-between pr-6'>
       <div className='logo ml-4 w-28 py-1 pl-px'><img src='./src/assets/Navimg/Logo.jpeg'></img></div>
       <ul className='flex gap-5 p-4 cursor-pointer left-[50%]'>
         <li>About</li>

@@ -26,7 +26,7 @@ export const Example = () => {
         </div>
       </div>
         <div className='opacity-30 w-[95%] h-0.5 bg-purple-600 m-auto'></div>
-        <div className='About-me text-purple-500 w-[75vw] text-center m-auto py-4'><h1 className='font-bold text-lg'>About me</h1>
+        <div className='About-me text-purple-500 w-[75vw] text-center m-auto py-4'><h1 className='font-bold text-2xl'>About me</h1>
         <p>I'm a recent SAIT graduate and aspiring Full-Stack Developer with a passion for creating dynamic and responsive web applications. Skilled in both frontend and backend technologies, I stay updated with modern web trends to deliver high-quality digital experiences. Dedicated to continuous learning, I strive to build efficient and user-friendly solutions.
         </p></div>
         <div className='opacity-30 w-[95%] h-0.5 bg-purple-600 m-auto'></div>

@@ -40,13 +40,13 @@ const Carousel = ({ slides, headerImage }) => {
   };
 
   return (
-    <div className='Carousel-main flex items-center justify-evenly '>
+    <div className='Carousel-main flex items-center justify-evenly max-h-fit -mb-12'>
       <div className='front-header text-purple-500 text-xl'>
         <img className='w-[65%] ml-7' src={headerImage} alt="Header" />
       </div>
-      <div ref={carouselRef} className="carousel -my-8 mx-7 flex justify-start overflow-hidden">
+      <div ref={carouselRef} className="carousel  mx-7 flex justify-start overflow-hidden">
         <div
-          className="carousel-container flex transition-transform duration-500"
+          className="carousel-container flex transition-transform duration-500 "
           style={{
             transform: `translateX(-${calculateTranslateX()}px)`,
             width: `${slides.length * 140}px` // Set the width based on the number of slides and fixed slide width
