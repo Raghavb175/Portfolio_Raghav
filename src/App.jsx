@@ -5,6 +5,9 @@ import './App.css'
 import { Example } from './Compnents/Example'
 import Carousel from './Compnents/Carousel';
 import SplashScreen from './Compnents/SplashScreen';
+// import Projects from './Compnents/Projects';
+import Projects from './Compnents/Projects';
+
 
 function App() {
 
@@ -134,21 +137,52 @@ function App() {
     // Add more slides as needed
   ];
 
-
-
+  const Projectnew = [
+    {
+      image: 'https://cdn-icons-png.flaticon.com/512/2907/2907241.png',
+      title: 'Node.js',
+    },
+    {
+      image: './src/assets/Backendimg/Java.png',
+      title: 'Java',
+    },
+    {
+      image: './src/assets/Backendimg/Python.png',
+      title: 'Python',
+    },
+    {
+      image: './src/assets/Backendimg/EJS.png',
+      title: 'EJS',
+    },
+    {
+      image: './src/assets/Backendimg/Express.png',
+      title: 'Express',
+    },
+    {
+      image: './src/assets/Backendimg/Wordpress.png',
+      title: 'Wordpress',
+    },
+    
+  ];
 
   const cardsToShow = 2; // Number of cards to show at a time
 
+
+  
+  const ProjectsToShow = 3;
 
   return (
     <>
     <SplashScreen></SplashScreen>
     <Navbar></Navbar>
     <Example></Example>
+
     <Carousel slides={slides} cardsToShow={cardsToShow} headerImage="./src/assets/Frontendimg/frontend.png" />
     <Carousel slides={backendslides} cardsToShow={cardsToShow} headerImage="./src/assets/Backendimg/Backendimg1.png" />
     <Carousel slides={Databaseslides} cardsToShow={cardsToShow} headerImage="./src/assets/Dataimg/Databaseimg.png" />
     <Carousel slides={Techslides} cardsToShow={cardsToShow} headerImage="./src/assets/Technologies img/Techimg.png" />
+
+    <Projects Projslides={Projectnew} ProjectsToShow={ProjectsToShow} />
     </>
   )
 }

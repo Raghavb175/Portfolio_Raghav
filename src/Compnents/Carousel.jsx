@@ -69,6 +69,7 @@ const Carousel = ({ slides, headerImage }) => {
         </button>
       </div>
     </div>
+    
   );
 };
 
