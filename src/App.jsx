@@ -139,28 +139,28 @@ function App() {
 
   const Projectnew = [
     {
-      image: 'https://cdn-icons-png.flaticon.com/512/2907/2907241.png',
-      title: 'Node.js',
-    },
-    {
-      image: './src/assets/Backendimg/Java.png',
+      image: './src/assets/Projectsimg/Java.png',
       title: 'Java',
     },
     {
-      image: './src/assets/Backendimg/Python.png',
-      title: 'Python',
+      image: './src/assets/Projectsimg/MayaSpa.png',
+      title: 'MayaSpa',
     },
     {
-      image: './src/assets/Backendimg/EJS.png',
-      title: 'EJS',
+      image: './src/assets/Projectsimg/Codewithrv.png',
+      title: 'Codewithrv',
     },
     {
-      image: './src/assets/Backendimg/Express.png',
-      title: 'Express',
+      image: './src/assets/Projectsimg/Clear.png',
+      title: 'Clear-clutter',
     },
     {
-      image: './src/assets/Backendimg/Wordpress.png',
-      title: 'Wordpress',
+      image: './src/assets/Projectsimg/Spotify.png',
+      title: 'Spotify',
+    },
+    {
+      image: './src/assets/Projectsimg/Netflix.png',
+      title: 'Netflix',
     },
     
   ];
