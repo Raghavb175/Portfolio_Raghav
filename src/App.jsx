@@ -7,6 +7,8 @@ import Carousel from './Compnents/Carousel';
 import SplashScreen from './Compnents/SplashScreen';
 // import Projects from './Compnents/Projects';
 import Projects from './Compnents/Projects';
+import Form from './Compnents/Form';
+// import ContactForm from './Compnents/Form';
 
 
 function App() {
@@ -143,19 +145,19 @@ function App() {
       title: 'Java',
     },
     {
-      image: './src/assets/Projectsimg/MayaSpa.png',
+      image: './src/assets/Projectsimg/MayaSpa.jpg',
       title: 'MayaSpa',
     },
     {
-      image: './src/assets/Projectsimg/Codewithrv.png',
+      image: './src/assets/Projectsimg/Codewithrv.jpg',
       title: 'Codewithrv',
     },
     {
-      image: './src/assets/Projectsimg/Clear.png',
+      image: './src/assets/Projectsimg/Clear.jpg',
       title: 'Clear-clutter',
     },
     {
-      image: './src/assets/Projectsimg/Spotify.png',
+      image: './src/assets/Projectsimg/Spotify.jpg',
       title: 'Spotify',
     },
     {
@@ -183,6 +185,7 @@ function App() {
     <Carousel slides={Techslides} cardsToShow={cardsToShow} headerImage="./src/assets/Technologies img/Techimg.png" />
 
     <Projects Projslides={Projectnew} ProjectsToShow={ProjectsToShow} />
+    <Form></Form>
     </>
   )
 }
