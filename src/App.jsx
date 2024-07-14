@@ -1,5 +1,5 @@
-import { Component, useState } from 'react'
-import { Navbar } from './Compnents/Navbar'
+import { Component, useState, useRef } from 'react'
+import Navbar from './Compnents/Navbar'
 import './App.css'
 // import { Uppercontent} from './Compnents/Uppercontent'
 import { Example } from './Compnents/Example'
@@ -12,6 +12,11 @@ import Form from './Compnents/Form';
 
 
 function App() {
+
+  const exampleRef = useRef(null);
+  const projectsRef = useRef(null);
+  const formRef = useRef(null);
+  const carouselRef = useRef(null);
 
   const slides = [
     {
@@ -104,7 +109,7 @@ function App() {
       image: './src/assets/Dataimg/SQL.png',
       title: 'SQL',
     },
-   
+
     // Add more slides as needed
   ];
   const Techslides = [
@@ -164,30 +169,37 @@ function App() {
       image: './src/assets/Projectsimg/Netflix.png',
       title: 'Netflix',
     },
-    
+
   ];
 
   const cardsToShow = 2; // Number of cards to show at a time
 
 
-  
+
   const ProjectsToShow = 3;
 
   return (
     <>
-    <SplashScreen></SplashScreen>
-    <Navbar></Navbar>
-    <Example></Example>
+      <SplashScreen></SplashScreen>
+      <Navbar exampleRef={exampleRef}
+        projectsRef={projectsRef}
+        formRef={formRef}
+        carouselRef={carouselRef}></Navbar>
 
-    <Carousel slides={slides} cardsToShow={cardsToShow} headerImage="./src/assets/Frontendimg/frontend.png" />
-    <Carousel slides={backendslides} cardsToShow={cardsToShow} headerImage="./src/assets/Backendimg/Backendimg1.png" />
-    <Carousel slides={Databaseslides} cardsToShow={cardsToShow} headerImage="./src/assets/Dataimg/Databaseimg.png" />
-    <Carousel slides={Techslides} cardsToShow={cardsToShow} headerImage="./src/assets/Technologies img/Techimg.png" />
+      <Example ref={exampleRef}></Example>
 
-    <Projects Projslides={Projectnew} ProjectsToShow={ProjectsToShow} />
-    <Form></Form>
+
+      <Carousel ref={carouselRef} slides={slides} cardsToShow={cardsToShow} headerImage="./src/assets/Frontendimg/frontend.png" />
+      <Carousel ref={carouselRef} slides={backendslides} cardsToShow={cardsToShow} headerImage="./src/assets/Backendimg/Backendimg1.png" />
+      <Carousel ref={carouselRef} slides={Databaseslides} cardsToShow={cardsToShow} headerImage="./src/assets/Dataimg/Databaseimg.png" />
+      <Carousel ref={carouselRef} slides={Techslides} cardsToShow={cardsToShow} headerImage="./src/assets/Technologies img/Techimg.png" />
+
+      <Projects ref={projectsRef} Projslides={Projectnew} ProjectsToShow={ProjectsToShow} />
+      <Form ref={formRef} />
+      {/* <Form></Form> */}
     </>
   )
-}
 
-export default App
+};
+
+export default App;
