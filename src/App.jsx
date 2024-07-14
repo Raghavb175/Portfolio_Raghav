@@ -1,8 +1,8 @@
 import { Component, useState, useRef } from 'react'
-import Navbar from './Compnents/Navbar'
+import { Navbar } from './Compnents/Navbar'
 import './App.css'
 // import { Uppercontent} from './Compnents/Uppercontent'
-import { Example } from './Compnents/Example'
+import Example from './Compnents/Example'
 import Carousel from './Compnents/Carousel';
 import SplashScreen from './Compnents/SplashScreen';
 // import Projects from './Compnents/Projects';
@@ -14,9 +14,35 @@ import Form from './Compnents/Form';
 function App() {
 
   const exampleRef = useRef(null);
+  const carouselRef = useRef(null);
   const projectsRef = useRef(null);
   const formRef = useRef(null);
-  const carouselRef = useRef(null);
+
+  const scrollToSection = (section) => {
+    const offset = 100; // Adjust this offset as needed
+    let elementPosition = 0;
+    switch (section) {
+      case 'example':
+        elementPosition = exampleRef.current.offsetTop;
+        break;
+      case 'carousel':
+        elementPosition = document.getElementById('techHeading').offsetTop; // Scroll to the h1 element
+        break;
+      case 'projects':
+        elementPosition = projectsRef.current.offsetTop;
+        break;
+      case 'contact':
+        elementPosition = formRef.current.offsetTop;
+        break;
+      default:
+        break;
+    }
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: 'smooth'
+    });
+  };
+  
 
   const slides = [
     {
@@ -181,16 +207,13 @@ function App() {
   return (
     <>
       <SplashScreen></SplashScreen>
-      <Navbar exampleRef={exampleRef}
-        projectsRef={projectsRef}
-        formRef={formRef}
-        carouselRef={carouselRef}></Navbar>
+      <Navbar scrollToSection={scrollToSection}></Navbar>
 
       <Example ref={exampleRef}></Example>
 
-
+      <h1 id="techHeading" className='text-4xl text-center underline mt-5 text-purple-500'>Languages and Tech.</h1>
       <Carousel ref={carouselRef} slides={slides} cardsToShow={cardsToShow} headerImage="./src/assets/Frontendimg/frontend.png" />
-      <Carousel ref={carouselRef} slides={backendslides} cardsToShow={cardsToShow} headerImage="./src/assets/Backendimg/Backendimg1.png" />
+      <Carousel ref={carouselRef} slides={backendslides} cardsToShow={cardsToShow} headerImage="./src/assets/Backendimg/Backendimg.png" />
       <Carousel ref={carouselRef} slides={Databaseslides} cardsToShow={cardsToShow} headerImage="./src/assets/Dataimg/Databaseimg.png" />
       <Carousel ref={carouselRef} slides={Techslides} cardsToShow={cardsToShow} headerImage="./src/assets/Technologies img/Techimg.png" />
 
