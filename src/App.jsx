@@ -211,7 +211,7 @@ function App() {
 
       <Example ref={exampleRef}></Example>
 
-      <h1 id="techHeading" className='text-4xl text-center underline mt-5 text-purple-500'>Languages and Tech.</h1>
+      <h1 id="techHeading" className='text-4xl text-center underline mt-5 text-purple-500 pb-8'>Languages and Tech.</h1>
       <Carousel ref={carouselRef} slides={slides} cardsToShow={cardsToShow} headerImage="./src/assets/Frontendimg/frontend.png" />
       <Carousel ref={carouselRef} slides={backendslides} cardsToShow={cardsToShow} headerImage="./src/assets/Backendimg/Backendimg.png" />
       <Carousel ref={carouselRef} slides={Databaseslides} cardsToShow={cardsToShow} headerImage="./src/assets/Dataimg/Databaseimg.png" />
