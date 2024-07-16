@@ -80,7 +80,7 @@ const Form = forwardRef((props, ref) => {
                 </form>
             </div>
             {showAlert && (
-                <div className="custom-alert fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50 min-h-fit">
+                <div className="custom-alert fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center z-50">
                     <div className="bg-purple-300 p-6 rounded-lg">
                         <p className="text-purple-800 text-center font-bold">Your message has been submitted!</p>
                         <button className="block mx-auto mt-4 px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600" onClick={closeAlert}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} color={"#ffffff"} fill={"none"}>

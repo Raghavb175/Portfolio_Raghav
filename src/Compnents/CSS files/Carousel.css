@@ -35,7 +35,7 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(255, 255, 255);
+    color: rgb(192, 106, 225);
     border: none;
     cursor: pointer;
     font-size: 20px;
@@ -44,10 +44,10 @@
   }
   
   .carousel-control.prev {
-    left: -15px;
+    left: -11.5px;
   }
 
   .carousel-control.next {
-    right: -15px;
+    right: -11.5px;
   }
   
