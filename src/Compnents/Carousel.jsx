@@ -11,6 +11,8 @@
 //     }
 //   };
 
+
+
 //   const prevSlide = () => {
 //     if (currentSlide > 0) {
 //       setCurrentSlide(currentSlide - 1);
