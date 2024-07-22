@@ -44,9 +44,9 @@ const Carousel = forwardRef(({ slides, headerImage }, ref) => {
       <div className='front-header text-purple-500 text-xl max-lg:w-60 mx-7 max-sm:-ml-2'>
         <img className='w-[55%] ml-7 -mt-10 max-lg:w-[100%] max-sm:ml-0 m-0' src={headerImage} alt="Header" />
       </div>
-      <div ref={carouselRef} className="carousel mx-5 flex justify-start overflow-hidden max-sm:mx-0 right-4">
+      <div ref={carouselRef} className="carousel mr-5 flex justify-start overflow-hidden max-sm:mx-0 right-4">
         <div
-          className="carousel-container flex transition-transform duration-500"
+          className="carousel-container flex transition-transform duration-500 overflow-hidden"
           style={{
             transform: `translateX(-${calculateTranslateX()}px)`,
             width: `${slides.length * 140}px` // Set the width based on the number of slides and fixed slide width
@@ -55,7 +55,7 @@ const Carousel = forwardRef(({ slides, headerImage }, ref) => {
           {slides.map((slide, index) => (
             <div key={index} className="carousel-slide mx-5 max-lg:mx-0 max-sm:-mx-4" style={{ width: '140px' }}>
               <img src={slide.image} alt={slide.title} className="carousel-image w-[70%] mx-auto" />
-              <div className="carousel-content flex justify-center">
+              <div className="carousel-content flex justify-center text-purple-500">
                 <h2>{slide.title}</h2>
               </div>
             </div>

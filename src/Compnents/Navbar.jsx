@@ -44,7 +44,7 @@ export const Navbar = ({ scrollToSection }) => {
   };
 
   return (
-    <div className='z-30 flex w-[100vw] text-purple-600 justify-between pr-6 fixed bg-black rv:pr-2 h-fit'>
+    <div className='z-30 flex w-[100vw] text-purple-600 justify-between fixed bg-black rv:pr-2 h-fit'>
       <div className='logo ml-4 w-28 py-1 pl-px drop-shadow-lg shadow-purple-500 max-sm:hidden'>
         <img src='./src/assets/Navimg/Logo.jpeg' alt='Logo' />
       </div>

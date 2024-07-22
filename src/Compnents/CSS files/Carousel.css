@@ -1,6 +1,7 @@
 .carousel {
+  overflow-x: hidden;
   position: relative;
-  width: 100%; /* Ensure it takes up the full width of the parent */
+  width: 100vw; /* Ensure it takes up the full width of the parent */
   overflow: hidden;
 }
 
