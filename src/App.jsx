@@ -46,7 +46,7 @@ function App() {
 
   const slides = [
     {
-      image: './src/assets/Frontendimg/react.png',
+      image: './src/assets/Frontendimg/React.png',
       title: 'REACT',
     },
     {

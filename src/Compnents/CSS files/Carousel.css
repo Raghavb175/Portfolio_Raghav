@@ -1,53 +1,50 @@
 .carousel {
-    position: relative;
-    width: 98%;
-    overflow: hidden;
+  position: relative;
+  width: 100%; /* Ensure it takes up the full width of the parent */
+  overflow: hidden;
 }
 
 .carousel-container {
-  
-      color: rgb(147,51,234);
-      display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .carousel-slide {
-    min-width: calc(100% / var(--cards-to-show));
-    flex: 0 0 auto;
-    padding: 0 10px; /* Adjust padding as needed */
-    box-sizing: border-box;
-  }
-  
-  .carousel-image {
-    width: 100%;
-    height: auto;
-  }
-  
-  .carousel-content {
-    text-align: center;
-    background-color: transparent;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(192, 106, 225);
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 10px;
-    z-index: 1;
-  }
-  
-  .carousel-control.prev {
-    left: -11.5px;
-  }
+  display: flex;
+  transition: transform 0.5s ease;
+}
 
-  .carousel-control.next {
-    right: -11.5px;
-  }
-  
+.carousel-slide {
+  min-width: 140px; /* Fixed width for each slide */
+  flex: 0 0 auto;
+  padding: 0 10px; /* Adjust padding as needed */
+  box-sizing: border-box;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-content {
+  text-align: center;
+  background-color: transparent;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(192, 106, 225);
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.carousel-control.prev {
+  left: -11.5px;
+}
+
+.carousel-control.next {
+  right: -11.5px;
+}
